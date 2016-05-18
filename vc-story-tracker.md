@@ -42,17 +42,8 @@ Description of the general things that need to be done.
   - [ ] Package.json and dependencies (Calcite bootstrap, node, general info, etc...)
   - [ ] Consume API and extract shared styling
   - [ ] Apply style information to the app user interface
+- [ ] Publishing to npm
 
-### Testing
-
-- [ ] Exploratory testing performed for (#this-issue-id) (#some-issue-id)
-- [ ] Test plan written for (#this-issue-id) (#some-issue-id)
-- [ ] Integration Test written for (#this-issue-id) (#some-issue-id)
-- [ ] Test plan (#test-plan-issue-id) executed for (#this-issue-id) (#some-issue-id)
-
-### Release Info
-
-When complete, this story can be deployed from {sha}
 
 ___
 
