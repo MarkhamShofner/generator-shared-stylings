@@ -1,2 +1,2 @@
-# hub-ready-generator
-Yeoman generator for a hub ready app generator. 
+# Shared Styling
+Yeoman generator that builds child applications that extract shared-styling from a parent application.
