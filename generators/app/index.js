@@ -4,7 +4,7 @@ var chalk = require('chalk');
 var yosay = require('yosay');
 
 module.exports = yeoman.Base.extend({
-  prompting: function () {
+  prompting: function() {
     // Have Yeoman greet the user.
     this.log(yosay(
       'Welcome to Markham\'s ' + chalk.red('shared-stylings') + ' generator!'
@@ -17,26 +17,26 @@ module.exports = yeoman.Base.extend({
       default: true
     }];
 
-    return this.prompt(prompts).then(function (props) {
+    return this.prompt(prompts).then(function(props) {
       // To access props later use this.props.someAnswer;
       this.props = props;
     }.bind(this));
   },
 
-  writing: function () {
+  writing: function() {
     this.fs.copy(
       this.templatePath('dummyfile.txt'),
       this.destinationPath('dummyfile.txt')
     );
   },
 
-  install: function () {
+  install: function() {
     this.installDependencies();
   },
-  method1: function () {
-  console.log('method 111 just ran');
-},
-method2: function () {
-  console.log('method 2 just ran');
-}
+  method1: function() {
+    console.log('method 111 just ran');
+  },
+  method2: function() {
+    console.log('method 2 just ran');
+  }
 });
