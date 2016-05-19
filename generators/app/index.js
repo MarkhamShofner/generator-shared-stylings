@@ -7,13 +7,13 @@ module.exports = yeoman.Base.extend({
   prompting: function () {
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the cat\'s pajamas ' + chalk.red('generator-shared-stylings') + ' generator!'
+      'Welcome to Markham\'s ' + chalk.red('shared-stylings') + ' generator!'
     ));
 
     var prompts = [{
       type: 'confirm',
       name: 'someAnswer',
-      message: 'Would you like to enable this option?',
+      message: 'Would you like to enable this option (testtest)?',
       default: true
     }];
 
@@ -32,5 +32,11 @@ module.exports = yeoman.Base.extend({
 
   install: function () {
     this.installDependencies();
-  }
+  },
+  method1: function () {
+  console.log('method 111 just ran');
+},
+method2: function () {
+  console.log('method 2 just ran');
+}
 });
